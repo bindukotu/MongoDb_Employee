@@ -46,5 +46,10 @@ public class CustomerController {
         ser.deleteAllData();
         return "record detleted All Recordes : ";
     }
+    @PutMapping("/update")
+    public  String updateRecord(@RequestBody Customer cus){
+         ser.updateRecord(cus);
+         return "record updated";
+    }
 
 }

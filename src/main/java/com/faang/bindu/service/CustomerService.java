@@ -39,4 +39,8 @@ public class CustomerService {
     public void deleteAllData(){
         repo.deleteAll();
     }
+
+    public void updateRecord(Customer cust){
+           repo.save(cust);
+    }
 }
